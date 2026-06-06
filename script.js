@@ -199,7 +199,7 @@
         anticipatePin: 1,
         /** Scroll vertical extra depois do fim do arrasto horizontal — menor = sai do pin mais rápido */
         fatorBufferSaida: 0.22,
-        /** Pausa no fim da timeline (scrub); menor = menos “inércia” ao soltar */
+        /** Pausa no fim da timeline (scrub); menor = menos "inércia" ao soltar */
         duracaoPausaFinalTimeline: 0.12,
     };
 
@@ -585,6 +585,82 @@
     };
 
     /* --------------------------------------------
+       ARRASTO HORIZONTAL (swipe) NOS PINS — TOUCH
+       Em mobile, swipe pra esquerda/direita também movimenta o pin.
+       O scroll vertical nativo continua funcionando normal.
+       -------------------------------------------- */
+
+    const CONFIG_ARRASTO = {
+        /** Mínimo de pixels arrastado antes de decidir direção (evita falsos positivos) */
+        limiarDecisaoDirecao: 6,
+        /** Multiplicador: 1 = arrastar 100px move 100px de scroll vertical. Mais alto = mais rápido. */
+        sensibilidade: 1.6,
+    };
+
+    const habilitarArrastoNoViewport = (viewport) => {
+        if (!viewport) return;
+
+        let startX = null;
+        let startY = null;
+        let startScrollY = null;
+        let modo = null; // 'horizontal' | 'vertical' | null (não decidido)
+
+        const onTouchStart = (e) => {
+            if (e.touches.length !== 1) return;
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+            startScrollY = window.scrollY;
+            modo = null;
+        };
+
+        const onTouchMove = (e) => {
+            if (startX === null) return;
+            const x = e.touches[0].clientX;
+            const y = e.touches[0].clientY;
+            const dx = x - startX;
+            const dy = y - startY;
+
+            if (modo === null) {
+                const absDx = Math.abs(dx);
+                const absDy = Math.abs(dy);
+                if (absDx < CONFIG_ARRASTO.limiarDecisaoDirecao &&
+                    absDy < CONFIG_ARRASTO.limiarDecisaoDirecao) {
+                    return; // ainda muito pequeno pra decidir
+                }
+                modo = absDx > absDy ? 'horizontal' : 'vertical';
+            }
+
+            if (modo === 'horizontal') {
+                // Bloqueia scroll nativo e converte arrasto em scroll vertical
+                // (pin do ScrollTrigger transforma scroll vertical em translação horizontal)
+                e.preventDefault();
+                const novoScrollY = startScrollY - dx * CONFIG_ARRASTO.sensibilidade;
+                window.scrollTo(0, Math.max(0, novoScrollY));
+            }
+            // se modo === 'vertical': deixa o scroll nativo rolar
+        };
+
+        const onTouchEnd = () => {
+            startX = null;
+            startY = null;
+            startScrollY = null;
+            modo = null;
+        };
+
+        // passive: false em touchmove permite chamar preventDefault
+        viewport.addEventListener('touchstart', onTouchStart, { passive: true });
+        viewport.addEventListener('touchmove', onTouchMove, { passive: false });
+        viewport.addEventListener('touchend', onTouchEnd, { passive: true });
+        viewport.addEventListener('touchcancel', onTouchEnd, { passive: true });
+    };
+
+    const iniciarArrastoHorizontalPins = () => {
+        if (!ehDispositivoToque()) return; // só mobile / touch
+        habilitarArrastoNoViewport(document.querySelector('.servicos__viewport'));
+        habilitarArrastoNoViewport(document.querySelector('.cases__viewport'));
+    };
+
+    /* --------------------------------------------
        LINKS ÂNCORA (Lenis ou fallback; evita conflito com scroll-behavior CSS)
        -------------------------------------------- */
 
@@ -660,6 +736,7 @@
         iniciarAnimacoesIcones();
         iniciarHeaderScroll();
         iniciarVoltarTopo();
+        iniciarArrastoHorizontalPins();
 
         document.fonts.ready.then(() => {
             requestAnimationFrame(() => {
