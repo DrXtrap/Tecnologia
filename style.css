@@ -1208,7 +1208,7 @@ button {
 /* DEMO no card de Sistemas — ocupa o espaço disponível e mostra TUDO */
 .cases .case-card--demo {
     flex: 0 0 min(620px, 92vw);
-    padding: 24px 0 20px;
+    padding: 20px 0 16px;
 }
 
 .cases .case-card--demo > :not(.demo-sistema) {
@@ -1217,12 +1217,13 @@ button {
 }
 
 .cases .case-card--demo .case-card__titulo {
-    font-size: clamp(18px, 1.8vw, 22px);
+    font-size: clamp(17px, 1.7vw, 21px);
 }
 
+/* Resumo escondido no card-demo desktop: o demo já fala por si.
+   Mobile reativa logo abaixo no @media. */
 .cases .case-card--demo .case-card__resumo {
-    font-size: 12px;
-    line-height: 1.4;
+    display: none;
 }
 
 .cases .case-card--demo .demo-sistema {
@@ -1266,7 +1267,7 @@ button {
 }
 
 .cases .case-card--demo .kpi {
-    padding: 9px 10px;
+    padding: 8px 10px;
     gap: 2px;
 }
 
@@ -1275,19 +1276,19 @@ button {
 }
 
 .cases .case-card--demo .kpi__valor {
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .cases .case-card--demo .kpi__variacao {
-    font-size: 9.5px;
+    font-size: 9px;
 }
 
 .cases .case-card--demo .demo-grafico {
-    padding: 10px 12px 6px;
+    padding: 9px 12px 5px;
 }
 
 .cases .case-card--demo .demo-grafico__cabecalho {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .cases .case-card--demo .demo-grafico__titulo {
@@ -1295,36 +1296,36 @@ button {
 }
 
 .cases .case-card--demo .demo-grafico__svg {
-    height: 50px;
+    height: 38px;
 }
 
 .cases .case-card--demo .demo-acoes__rotulo {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     font-size: 9px;
 }
 
 .cases .case-card--demo .demo-acoes__botoes {
-    gap: 7px;
+    gap: 6px;
 }
 
 .cases .case-card--demo .demo-btn {
-    padding: 8px 5px;
-    gap: 4px;
-    font-size: 9.5px;
+    padding: 6px 4px;
+    gap: 3px;
+    font-size: 9px;
 }
 
 .cases .case-card--demo .demo-btn svg {
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
 }
 
 .cases .case-card--demo .demo-statusbar {
-    padding: 6px 10px;
+    padding: 5px 10px;
     margin-top: 0;
 }
 
 .cases .case-card--demo .demo-statusbar__texto {
-    font-size: 9.5px;
+    font-size: 9px;
 }
 
 .case-card__rotulo {
@@ -2256,7 +2257,24 @@ button {
     }
 
     .demo-grafico {
-        display: none;
+        padding: 10px 12px 6px;
+    }
+
+    .demo-grafico__cabecalho {
+        margin-bottom: 6px;
+    }
+
+    .demo-grafico__titulo {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .demo-grafico__legenda {
+        font-size: 8px;
+    }
+
+    .demo-grafico__svg {
+        height: 48px;
     }
 
     .demo-acoes__rotulo {
