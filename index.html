@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Sites, sistemas e agentes de IA pra empresas que querem crescer sem complicar. Diagnóstico gratuito em 15 minutos.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="author" content="Jtech">
+    <title>Jtech — Tecnologia que trabalha por você</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://drxtrap.github.io/jtech/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://drxtrap.github.io/jtech/">
+    <meta property="og:title" content="Jtech — Tecnologia que trabalha por você">
+    <meta property="og:description" content="Sites, sistemas e agentes de IA pra empresas. Diagnóstico gratuito em 15 minutos.">
+    <meta property="og:image" content="https://drxtrap.github.io/jtech/og-image.svg">
+    <meta property="og:locale" content="pt_BR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jtech — Tecnologia que trabalha por você">
+    <meta name="twitter:description" content="Sites, sistemas e agentes de IA pra empresas. Diagnóstico gratuito em 15 minutos.">
+    <meta name="twitter:image" content="https://drxtrap.github.io/jtech/og-image.svg">
+
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Jtech",
+        "description": "Sites, sistemas e agentes de IA pra empresas que querem crescer sem complicar.",
+        "url": "https://drxtrap.github.io/jtech/",
+        "logo": "https://drxtrap.github.io/jtech/favicon.svg",
+        "image": "https://drxtrap.github.io/jtech/og-image.svg",
+        "telephone": "+5516996214799",
+        "areaServed": {
+            "@type": "City",
+            "name": "Ribeirão Preto"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ribeirão Preto",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "priceRange": "$$",
+        "serviceType": [
+            "Desenvolvimento de Sites",
+            "Sistemas Sob Medida",
+            "Agentes de Inteligência Artificial",
+            "Automação de Processos"
+        ],
+        "sameAs": []
+    }
+    </script>
+</head>
+<body>
+
+    <svg class="svg-simbolos" aria-hidden="true" focusable="false" width="0" height="0">
+        <defs>
+            <symbol id="chip-jtech" viewBox="0 0 200 200">
+
+                <g class="chip__pinos">
+                    <rect class="chip__pino" x="56" y="22" width="10" height="20" rx="1"/>
+                    <rect class="chip__pino" x="82" y="22" width="10" height="20" rx="1"/>
+                    <rect class="chip__pino" x="108" y="22" width="10" height="20" rx="1"/>
+                    <rect class="chip__pino" x="134" y="22" width="10" height="20" rx="1"/>
+
+                    <rect class="chip__pino" x="56" y="158" width="10" height="20" rx="1"/>
+                    <rect class="chip__pino" x="82" y="158" width="10" height="20" rx="1"/>
+                    <rect class="chip__pino" x="108" y="158" width="10" height="20" rx="1"/>
+                    <rect class="chip__pino" x="134" y="158" width="10" height="20" rx="1"/>
+
+                    <rect class="chip__pino" x="22" y="56" width="20" height="10" rx="1"/>
+                    <rect class="chip__pino" x="22" y="82" width="20" height="10" rx="1"/>
+                    <rect class="chip__pino" x="22" y="108" width="20" height="10" rx="1"/>
+                    <rect class="chip__pino" x="22" y="134" width="20" height="10" rx="1"/>
+
+                    <rect class="chip__pino" x="158" y="56" width="20" height="10" rx="1"/>
+                    <rect class="chip__pino" x="158" y="82" width="20" height="10" rx="1"/>
+                    <rect class="chip__pino" x="158" y="108" width="20" height="10" rx="1"/>
+                    <rect class="chip__pino" x="158" y="134" width="20" height="10" rx="1"/>
+                </g>
+
+                <rect class="chip__corpo" x="42" y="42" width="116" height="116" rx="8"/>
+                <rect class="chip__corpo-borda" x="42" y="42" width="116" height="116" rx="8"/>
+
+                <circle class="chip__led" cx="54" cy="54" r="3.2"/>
+
+                <g class="chip__rosto">
+                    <ellipse class="chip__olho chip__olho--esquerdo" cx="82" cy="92" rx="5" ry="7"/>
+                    <ellipse class="chip__olho chip__olho--direito" cx="118" cy="92" rx="5" ry="7"/>
+                    <path class="chip__sorriso" d="M 84 118 Q 100 124 116 118" fill="none"/>
+                </g>
+
+            </symbol>
+        </defs>
+    </svg>
+
+    <header class="cabecalho" role="banner">
+        <a class="cabecalho__marca" href="#inicio" aria-label="Jtech, ir para o topo">
+            <svg class="cabecalho__chip-mini" viewBox="0 0 200 200" aria-hidden="true">
+                <use href="#chip-jtech"/>
+            </svg>
+            <span class="cabecalho__nome">Jtech</span>
+        </a>
+
+        <nav class="cabecalho__nav" aria-label="Navegação principal">
+            <a href="#servicos">Serviços</a>
+            <a href="#processo">Processo</a>
+            <a href="#cases">Cases</a>
+            <a href="#contato" class="cabecalho__cta-nav">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+
+            <canvas class="hero__particulas" aria-hidden="true"></canvas>
+            <div class="hero__grid" aria-hidden="true"></div>
+            <div class="hero__vinheta" aria-hidden="true"></div>
+
+            <div class="hero__conteudo">
+
+                <div class="hero__chip-container">
+                    <svg class="chip" viewBox="0 0 200 200" role="img" aria-label="Mascote Jtech, chip de processador">
+
+                        <g class="chip__pinos">
+                            <rect class="chip__pino" x="56" y="22" width="10" height="20" rx="1"/>
+                            <rect class="chip__pino" x="82" y="22" width="10" height="20" rx="1"/>
+                            <rect class="chip__pino" x="108" y="22" width="10" height="20" rx="1"/>
+                            <rect class="chip__pino" x="134" y="22" width="10" height="20" rx="1"/>
+
+                            <rect class="chip__pino" x="56" y="158" width="10" height="20" rx="1"/>
+                            <rect class="chip__pino" x="82" y="158" width="10" height="20" rx="1"/>
+                            <rect class="chip__pino" x="108" y="158" width="10" height="20" rx="1"/>
+                            <rect class="chip__pino" x="134" y="158" width="10" height="20" rx="1"/>
+
+                            <rect class="chip__pino" x="22" y="56" width="20" height="10" rx="1"/>
+                            <rect class="chip__pino" x="22" y="82" width="20" height="10" rx="1"/>
+                            <rect class="chip__pino" x="22" y="108" width="20" height="10" rx="1"/>
+                            <rect class="chip__pino" x="22" y="134" width="20" height="10" rx="1"/>
+
+                            <rect class="chip__pino" x="158" y="56" width="20" height="10" rx="1"/>
+                            <rect class="chip__pino" x="158" y="82" width="20" height="10" rx="1"/>
+                            <rect class="chip__pino" x="158" y="108" width="20" height="10" rx="1"/>
+                            <rect class="chip__pino" x="158" y="134" width="20" height="10" rx="1"/>
+                        </g>
+
+                        <rect class="chip__corpo" x="42" y="42" width="116" height="116" rx="8"/>
+                        <rect class="chip__corpo-borda" x="42" y="42" width="116" height="116" rx="8"/>
+
+                        <circle class="chip__led" cx="54" cy="54" r="3.2"/>
+
+                        <g class="chip__rosto">
+                            <ellipse class="chip__olho chip__olho--esquerdo" cx="82" cy="92" rx="5" ry="7"/>
+                            <ellipse class="chip__olho chip__olho--direito" cx="118" cy="92" rx="5" ry="7"/>
+                            <path class="chip__sorriso" d="M 84 118 Q 100 124 116 118" fill="none"/>
+                        </g>
+
+                    </svg>
+                </div>
+
+                <h1 id="hero-titulo" class="hero__titulo">
+                    Tecnologia que trabalha<br>por você.
+                </h1>
+
+                <p class="hero__subtitulo">
+                    Sites, sistemas e agentes de IA pra empresas que querem crescer sem complicar.
+                </p>
+
+                <a href="#contato" class="hero__cta">
+                    <span>Diagnóstico gratuito</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+
+            </div>
+
+            <div class="hero__indicador-scroll" aria-hidden="true">
+                <span class="hero__indicador-texto">role pra ver</span>
+                <span class="hero__indicador-seta"></span>
+            </div>
+
+        </section>
+
+        <section class="servicos" id="servicos" aria-labelledby="servicos-titulo">
+            <div class="servicos__pin-wrapper">
+                <div class="servicos__viewport">
+
+                    <header class="servicos__cabecalho">
+                        <span class="servicos__sobretitulo">O que fazemos</span>
+                        <h2 id="servicos-titulo" class="servicos__titulo">Tecnologia que entrega.</h2>
+                        <span class="servicos__indicador-horizontal" aria-hidden="true">
+                            <span class="servicos__indicador-linha"></span>
+                            <span class="servicos__indicador-dica">
+                                <span class="servicos__indicador-dica--desktop">role para ver</span>
+                                <span class="servicos__indicador-dica--toque">arraste ou role</span>
+                            </span>
+                        </span>
+                    </header>
+
+                    <div class="servicos__pista">
+
+                        <article class="servico-card" data-card-indice="0">
+                            <span class="servico-card__numero">01</span>
+
+                            <div class="servico-card__icone-wrap">
+                                <svg class="icone-sites" viewBox="0 0 100 100" aria-hidden="true">
+                                    <rect class="icone-sites__janela" x="10" y="16" width="80" height="68" rx="3" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                                    <line x1="10" y1="28" x2="90" y2="28" stroke="currentColor" stroke-width="1.4"/>
+                                    <circle cx="16" cy="22" r="1.2" fill="currentColor"/>
+                                    <circle cx="22" cy="22" r="1.2" fill="currentColor"/>
+                                    <circle cx="28" cy="22" r="1.2" fill="currentColor"/>
+
+                                    <rect class="icone-sites__linha icone-sites__linha--1" x="16" y="36" width="32" height="1.6" fill="currentColor"/>
+                                    <rect class="icone-sites__linha icone-sites__linha--2" x="20" y="42" width="40" height="1.6" fill="currentColor"/>
+                                    <rect class="icone-sites__linha icone-sites__linha--3" x="16" y="48" width="22" height="1.6" fill="currentColor"/>
+                                    <rect class="icone-sites__linha icone-sites__linha--4" x="24" y="54" width="36" height="1.6" fill="currentColor"/>
+
+                                    <rect class="icone-sites__cursor" x="62" y="53" width="1.6" height="3.6" fill="currentColor"/>
+
+                                    <rect class="icone-sites__bloco icone-sites__bloco--1" x="16" y="64" width="14" height="14" rx="1" fill="currentColor" opacity="0"/>
+                                    <rect class="icone-sites__bloco icone-sites__bloco--2" x="34" y="64" width="50" height="3" rx="1" fill="currentColor" opacity="0"/>
+                                    <rect class="icone-sites__bloco icone-sites__bloco--3" x="34" y="70" width="38" height="3" rx="1" fill="currentColor" opacity="0"/>
+                                    <rect class="icone-sites__bloco icone-sites__bloco--4" x="34" y="76" width="44" height="3" rx="1" fill="currentColor" opacity="0"/>
+                                </svg>
+                            </div>
+
+                            <h3 class="servico-card__titulo">Sites</h3>
+                            <p class="servico-card__sub">Vitrines que vendem por você.</p>
+                            <ul class="servico-card__lista">
+                                <li>Landing pages que param o scroll do cliente</li>
+                                <li>Sites institucionais vendendo 24h</li>
+                                <li>E-commerces leves e rápidos</li>
+                                <li>SEO técnico já vem incluso</li>
+                            </ul>
+                            <a href="#contato" class="servico-card__cta">
+                                Quero esse
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </article>
+
+                        <article class="servico-card" data-card-indice="1">
+                            <span class="servico-card__numero">02</span>
+
+                            <div class="servico-card__icone-wrap">
+                                <svg class="icone-sistemas" viewBox="0 0 100 100" aria-hidden="true">
+                                    <g transform="translate(34 38)">
+                                        <g class="icone-sistemas__engrenagem icone-sistemas__engrenagem--grande">
+                                            <circle cx="0" cy="0" r="14" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                                            <circle cx="0" cy="0" r="4" fill="currentColor"/>
+                                            <rect x="-1.5" y="-19" width="3" height="5" fill="currentColor"/>
+                                            <rect x="-1.5" y="-19" width="3" height="5" fill="currentColor" transform="rotate(45)"/>
+                                            <rect x="-1.5" y="-19" width="3" height="5" fill="currentColor" transform="rotate(90)"/>
+                                            <rect x="-1.5" y="-19" width="3" height="5" fill="currentColor" transform="rotate(135)"/>
+                                            <rect x="-1.5" y="-19" width="3" height="5" fill="currentColor" transform="rotate(180)"/>
+                                            <rect x="-1.5" y="-19" width="3" height="5" fill="currentColor" transform="rotate(225)"/>
+                                            <rect x="-1.5" y="-19" width="3" height="5" fill="currentColor" transform="rotate(270)"/>
+                                            <rect x="-1.5" y="-19" width="3" height="5" fill="currentColor" transform="rotate(315)"/>
+                                        </g>
+                                    </g>
+
+                                    <g transform="translate(66 62)">
+                                        <g class="icone-sistemas__engrenagem icone-sistemas__engrenagem--media">
+                                            <circle cx="0" cy="0" r="10" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                                            <circle cx="0" cy="0" r="3" fill="currentColor"/>
+                                            <rect x="-1.2" y="-14" width="2.4" height="4" fill="currentColor"/>
+                                            <rect x="-1.2" y="-14" width="2.4" height="4" fill="currentColor" transform="rotate(60)"/>
+                                            <rect x="-1.2" y="-14" width="2.4" height="4" fill="currentColor" transform="rotate(120)"/>
+                                            <rect x="-1.2" y="-14" width="2.4" height="4" fill="currentColor" transform="rotate(180)"/>
+                                            <rect x="-1.2" y="-14" width="2.4" height="4" fill="currentColor" transform="rotate(240)"/>
+                                            <rect x="-1.2" y="-14" width="2.4" height="4" fill="currentColor" transform="rotate(300)"/>
+                                        </g>
+                                    </g>
+
+                                    <g transform="translate(72 30)">
+                                        <g class="icone-sistemas__engrenagem icone-sistemas__engrenagem--pequena">
+                                            <circle cx="0" cy="0" r="6" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                                            <circle cx="0" cy="0" r="2" fill="currentColor"/>
+                                            <rect x="-1" y="-9" width="2" height="3" fill="currentColor"/>
+                                            <rect x="-1" y="-9" width="2" height="3" fill="currentColor" transform="rotate(72)"/>
+                                            <rect x="-1" y="-9" width="2" height="3" fill="currentColor" transform="rotate(144)"/>
+                                            <rect x="-1" y="-9" width="2" height="3" fill="currentColor" transform="rotate(216)"/>
+                                            <rect x="-1" y="-9" width="2" height="3" fill="currentColor" transform="rotate(288)"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <h3 class="servico-card__titulo">Sistemas</h3>
+                            <p class="servico-card__sub">Software sob medida.</p>
+                            <ul class="servico-card__lista">
+                                <li>Dashboards que mostram o que importa</li>
+                                <li>ERPs simples, sem enrolação</li>
+                                <li>Integração entre o que você já usa</li>
+                                <li>Automação dos processos chatos</li>
+                            </ul>
+                            <a href="#contato" class="servico-card__cta">
+                                Quero esse
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </article>
+
+                        <article class="servico-card" data-card-indice="2">
+                            <span class="servico-card__numero">03</span>
+
+                            <div class="servico-card__icone-wrap">
+                                <svg class="icone-ia" viewBox="0 0 100 100" aria-hidden="true">
+                                    <line class="icone-ia__sinapse icone-ia__sinapse--1" x1="22" y1="38" x2="50" y2="24" stroke="currentColor" stroke-width="0.8"/>
+                                    <line class="icone-ia__sinapse icone-ia__sinapse--2" x1="50" y1="24" x2="78" y2="38" stroke="currentColor" stroke-width="0.8"/>
+                                    <line class="icone-ia__sinapse icone-ia__sinapse--3" x1="22" y1="38" x2="38" y2="58" stroke="currentColor" stroke-width="0.8"/>
+                                    <line class="icone-ia__sinapse icone-ia__sinapse--4" x1="38" y1="58" x2="62" y2="58" stroke="currentColor" stroke-width="0.8"/>
+                                    <line class="icone-ia__sinapse icone-ia__sinapse--5" x1="62" y1="58" x2="78" y2="38" stroke="currentColor" stroke-width="0.8"/>
+                                    <line class="icone-ia__sinapse icone-ia__sinapse--6" x1="50" y1="24" x2="50" y2="58" stroke="currentColor" stroke-width="0.8"/>
+                                    <line class="icone-ia__sinapse icone-ia__sinapse--7" x1="38" y1="58" x2="50" y2="78" stroke="currentColor" stroke-width="0.8"/>
+                                    <line class="icone-ia__sinapse icone-ia__sinapse--8" x1="62" y1="58" x2="50" y2="78" stroke="currentColor" stroke-width="0.8"/>
+
+                                    <circle class="icone-ia__no icone-ia__no--1" cx="22" cy="38" r="3.2" fill="currentColor"/>
+                                    <circle class="icone-ia__no icone-ia__no--2" cx="50" cy="24" r="3.6" fill="currentColor"/>
+                                    <circle class="icone-ia__no icone-ia__no--3" cx="78" cy="38" r="3.2" fill="currentColor"/>
+                                    <circle class="icone-ia__no icone-ia__no--4" cx="38" cy="58" r="3" fill="currentColor"/>
+                                    <circle class="icone-ia__no icone-ia__no--5" cx="62" cy="58" r="3" fill="currentColor"/>
+                                    <circle class="icone-ia__no icone-ia__no--6" cx="50" cy="78" r="3.4" fill="currentColor"/>
+                                </svg>
+                            </div>
+
+                            <h3 class="servico-card__titulo">Agentes IA</h3>
+                            <p class="servico-card__sub">Funcionários digitais que não dormem.</p>
+                            <ul class="servico-card__lista">
+                                <li>Seu WhatsApp atendendo cliente 24h sem você</li>
+                                <li>Qualificação de leads no automático</li>
+                                <li>Agente que agenda direto na sua agenda</li>
+                                <li>Conversa que vende sem você entrar</li>
+                            </ul>
+                            <a href="#contato" class="servico-card__cta">
+                                Quero esse
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </article>
+
+                        <article class="servico-card" data-card-indice="3">
+                            <span class="servico-card__numero">04</span>
+
+                            <div class="servico-card__icone-wrap">
+                                <svg class="icone-automacao" viewBox="0 0 100 100" aria-hidden="true">
+                                    <rect class="icone-automacao__caixa" x="10" y="18" width="22" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                                    <rect class="icone-automacao__caixa" x="39" y="44" width="22" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                                    <rect class="icone-automacao__caixa" x="68" y="18" width="22" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                                    <rect class="icone-automacao__caixa" x="10" y="70" width="22" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                                    <rect class="icone-automacao__caixa" x="68" y="70" width="22" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+
+                                    <path class="icone-automacao__conexao icone-automacao__conexao--1" d="M 32 25 L 50 25 L 50 44" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                                    <path class="icone-automacao__conexao icone-automacao__conexao--2" d="M 68 25 L 50 25 L 50 44" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                                    <path class="icone-automacao__conexao icone-automacao__conexao--3" d="M 50 58 L 50 77 L 32 77" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                                    <path class="icone-automacao__conexao icone-automacao__conexao--4" d="M 50 58 L 50 77 L 68 77" stroke="currentColor" stroke-width="1.2" fill="none"/>
+
+                                    <circle class="icone-automacao__particula icone-automacao__particula--1" cx="32" cy="25" r="2" fill="currentColor"/>
+                                    <circle class="icone-automacao__particula icone-automacao__particula--2" cx="68" cy="25" r="2" fill="currentColor"/>
+                                    <circle class="icone-automacao__particula icone-automacao__particula--3" cx="50" cy="58" r="2" fill="currentColor"/>
+                                </svg>
+                            </div>
+
+                            <h3 class="servico-card__titulo">Automações</h3>
+                            <p class="servico-card__sub">Tarefa repetitiva nunca mais.</p>
+                            <ul class="servico-card__lista">
+                                <li>Leads chegando enquanto você dorme</li>
+                                <li>Follow-ups que não esquecem ninguém</li>
+                                <li>Planilhas e relatórios no piloto automático</li>
+                                <li>Fluxos personalizados com n8n</li>
+                            </ul>
+                            <a href="#contato" class="servico-card__cta">
+                                Quero esse
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </article>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="processo" id="processo" aria-labelledby="processo-titulo">
+            <header class="processo__cabecalho">
+                <span class="processo__sobretitulo">Como funciona</span>
+                <h2 id="processo-titulo" class="processo__titulo">Do diagnóstico à entrega.</h2>
+                <p class="processo__subtitulo">Quatro passos. Sem mistério. Sem enrolação.</p>
+            </header>
+
+            <div class="processo__timeline">
+                <div class="processo__linha" aria-hidden="true"></div>
+
+                <article class="processo__passo" data-passo="01">
+                    <div class="processo__marco" aria-hidden="true">
+                        <span class="processo__marco-numero">01</span>
+                    </div>
+                    <div class="processo__conteudo">
+                        <h3 class="processo__titulo-passo">Diagnóstico</h3>
+                        <p class="processo__descricao">Entendo seu negócio, onde tá doendo e onde dá pra crescer. 30 minutos por chamada ou WhatsApp, sem custo.</p>
+                    </div>
+                </article>
+
+                <article class="processo__passo" data-passo="02">
+                    <div class="processo__marco" aria-hidden="true">
+                        <span class="processo__marco-numero">02</span>
+                    </div>
+                    <div class="processo__conteudo">
+                        <h3 class="processo__titulo-passo">Proposta</h3>
+                        <p class="processo__descricao">Mando um plano com escopo, prazo e preço fechado. Você decide se faz sentido.</p>
+                    </div>
+                </article>
+
+                <article class="processo__passo" data-passo="03">
+                    <div class="processo__marco" aria-hidden="true">
+                        <span class="processo__marco-numero">03</span>
+                    </div>
+                    <div class="processo__conteudo">
+                        <h3 class="processo__titulo-passo">Construção</h3>
+                        <p class="processo__descricao">Coloco a mão na massa. Você acompanha o progresso e valida cada entrega.</p>
+                    </div>
+                </article>
+
+                <article class="processo__passo" data-passo="04">
+                    <div class="processo__marco" aria-hidden="true">
+                        <span class="processo__marco-numero">04</span>
+                    </div>
+                    <div class="processo__conteudo">
+                        <h3 class="processo__titulo-passo">Entrega</h3>
+                        <p class="processo__descricao">Sistema rodando, time treinado e suporte ativo. Você foca no que importa — eu cuido da tecnologia.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="cases" id="cases" aria-labelledby="cases-titulo">
+            <div class="cases__pin-wrapper">
+                <div class="cases__viewport">
+
+                    <header class="cases__cabecalho">
+                        <span class="cases__sobretitulo">Cases</span>
+                        <h2 id="cases-titulo" class="cases__titulo">Tecnologia em ação.</h2>
+                        <span class="cases__indicador-horizontal" aria-hidden="true">
+                            <span class="cases__indicador-linha"></span>
+                            <span class="cases__indicador-dica">
+                                <span class="cases__indicador-dica--desktop">role para ver</span>
+                                <span class="cases__indicador-dica--toque">arraste ou role</span>
+                            </span>
+                        </span>
+                    </header>
+
+                    <div class="cases__pista">
+
+                        <article class="case-card">
+                            <span class="case-card__rotulo">01 · Sites & Landing Pages</span>
+                            <h3 class="case-card__titulo">Sua cara online importa.</h3>
+                            <p class="case-card__resumo">
+                                Um site bem feito é o seu vendedor mais barato e mais constante. Trabalha 24 horas por dia, fala com todo mundo que aparece, e não tira folga.
+                            </p>
+                            <p class="case-card__resumo case-card__resumo--secundario">
+                                Cliente que entra num site lento, feio ou comum no celular já saiu — e provavelmente já te comparou com o concorrente. A gente faz site que <strong>é</strong> a cara da sua empresa: rápido, leve, lindo no celular, com animações que prendem atenção e SEO técnico pra Google te achar.
+                            </p>
+                            <ul class="case-card__pontos">
+                                <li><strong>Landing pages</strong> que param o scroll do cliente</li>
+                                <li><strong>Sites institucionais</strong> com personalidade</li>
+                                <li><strong>E-commerce</strong> leve, rápido e seguro</li>
+                                <li><strong>SEO técnico</strong> e performance já inclusos</li>
+                            </ul>
+                            <div class="case-card__rodape">
+                                <span class="case-card__stack">HTML · CSS · JS · GSAP · Performance</span>
+                            </div>
+                            <a href="#contato" class="case-card__cta">
+                                Quero esse
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </article>
+
+                        <article class="case-card case-card--demo">
+                            <span class="case-card__rotulo">02 · Sistemas sob medida</span>
+                            <h3 class="case-card__titulo">Sistemas que pensam por você.</h3>
+                            <p class="case-card__resumo">
+                                Cada empresa tem seu jeito de funcionar — e planilha gigante já não dá conta. Sistema sob medida é quando o software se adapta a você, e não o contrário.
+                            </p>
+
+                            <div class="demo-sistema" aria-label="Demonstração de sistema interativo">
+                                <div class="demo-sistema__topo">
+                                    <span class="demo-sistema__ponto"></span>
+                                    <span class="demo-sistema__ponto"></span>
+                                    <span class="demo-sistema__ponto"></span>
+                                    <span class="demo-sistema__titulo-app">Painel · Jtech Demo</span>
+                                    <span class="demo-sistema__relogio" data-relogio>--:--:--</span>
+                                </div>
+
+                                <div class="demo-sistema__corpo">
+
+                                    <div class="demo-sistema__kpis">
+                                        <div class="kpi">
+                                            <span class="kpi__rotulo">Vendas hoje</span>
+                                            <span class="kpi__valor" data-kpi="vendas">R$ 4.230</span>
+                                            <span class="kpi__variacao kpi__variacao--positiva">
+                                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17l5-5 5 5 M7 11l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                12% vs ontem
+                                            </span>
+                                        </div>
+                                        <div class="kpi">
+                                            <span class="kpi__rotulo">Pedidos</span>
+                                            <span class="kpi__valor" data-kpi="pedidos">12</span>
+                                            <span class="kpi__variacao kpi__variacao--positiva">
+                                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17l5-5 5 5 M7 11l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                8% vs ontem
+                                            </span>
+                                        </div>
+                                        <div class="kpi">
+                                            <span class="kpi__rotulo">Clientes</span>
+                                            <span class="kpi__valor" data-kpi="clientes">847</span>
+                                            <span class="kpi__variacao kpi__variacao--positiva">
+                                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17l5-5 5 5 M7 11l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                3 novos hoje
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="demo-grafico">
+                                        <div class="demo-grafico__cabecalho">
+                                            <span class="demo-grafico__titulo">Vendas — Últimos 7 dias</span>
+                                            <span class="demo-grafico__legenda">
+                                                <span class="demo-grafico__legenda-dot"></span>
+                                                R$ por dia
+                                            </span>
+                                        </div>
+                                        <svg class="demo-grafico__svg" viewBox="0 0 280 110" preserveAspectRatio="none" aria-hidden="true">
+                                            <g class="demo-grafico__grade">
+                                                <line x1="0" y1="20" x2="280" y2="20" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 4"/>
+                                                <line x1="0" y1="55" x2="280" y2="55" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 4"/>
+                                                <line x1="0" y1="90" x2="280" y2="90" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 4"/>
+                                            </g>
+                                            <g class="demo-grafico__barras">
+                                                <rect class="demo-barra" x="12"  y="65" width="24" height="25" rx="2" data-altura="25"/>
+                                                <rect class="demo-barra" x="50"  y="45" width="24" height="45" rx="2" data-altura="45"/>
+                                                <rect class="demo-barra" x="88"  y="58" width="24" height="32" rx="2" data-altura="32"/>
+                                                <rect class="demo-barra" x="126" y="30" width="24" height="60" rx="2" data-altura="60"/>
+                                                <rect class="demo-barra" x="164" y="40" width="24" height="50" rx="2" data-altura="50"/>
+                                                <rect class="demo-barra" x="202" y="22" width="24" height="68" rx="2" data-altura="68"/>
+                                                <rect class="demo-barra demo-barra--hoje" x="240" y="12" width="24" height="78" rx="2" data-altura="78"/>
+                                            </g>
+                                            <g class="demo-grafico__labels">
+                                                <text x="24"  y="105" text-anchor="middle">S</text>
+                                                <text x="62"  y="105" text-anchor="middle">T</text>
+                                                <text x="100" y="105" text-anchor="middle">Q</text>
+                                                <text x="138" y="105" text-anchor="middle">Q</text>
+                                                <text x="176" y="105" text-anchor="middle">S</text>
+                                                <text x="214" y="105" text-anchor="middle">S</text>
+                                                <text x="252" y="105" text-anchor="middle">D</text>
+                                            </g>
+                                        </svg>
+                                    </div>
+
+                                    <div class="demo-acoes">
+                                        <span class="demo-acoes__rotulo">Ações rápidas</span>
+                                        <div class="demo-acoes__botoes">
+                                            <button class="demo-btn" type="button" data-acao="relatorio">
+                                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z M14 2v6h6 M16 13H8 M16 17H8 M10 9H8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                Relatório
+                                            </button>
+                                            <button class="demo-btn" type="button" data-acao="cliente">
+                                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2 M9 11a4 4 0 100-8 4 4 0 000 8z M22 11h-6 M19 8v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                Cliente
+                                            </button>
+                                            <button class="demo-btn" type="button" data-acao="email">
+                                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z M22 6l-10 7L2 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                Email
+                                            </button>
+                                            <button class="demo-btn demo-btn--destaque" type="button" data-acao="sincronizar">
+                                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 4v6h-6 M1 20v-6h6 M3.5 9a9 9 0 0114.85-3.36L23 10 M20.5 15a9 9 0 01-14.85 3.36L1 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                Sincronizar
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="demo-statusbar" aria-live="polite">
+                                        <span class="demo-statusbar__indicador"></span>
+                                        <span class="demo-statusbar__texto" data-status>Sistema online · Sincronizado agora</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="demo-toast" data-toast>
+                                    <svg class="demo-toast__icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    <span class="demo-toast__texto" data-toast-texto></span>
+                                </div>
+                            </div>
+
+                            <p class="case-card__resumo case-card__resumo--secundario">
+                                Dashboard que mostra o que importa em tempo real. Botão que faz o trabalho de uma pessoa inteira. Integração que conecta WhatsApp, planilha, banco e estoque numa coisa só.
+                            </p>
+
+                            <div class="case-card__rodape">
+                                <span class="case-card__stack">Node · React · APIs · Banco de Dados</span>
+                            </div>
+                            <a href="#contato" class="case-card__cta">
+                                Quero esse
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </article>
+
+                        <article class="case-card">
+                            <span class="case-card__rotulo">03 · Agentes de IA</span>
+                            <h3 class="case-card__titulo">Funcionários digitais que não dormem.</h3>
+                            <p class="case-card__resumo">
+                                Imagina ter alguém atendendo seu WhatsApp 24h, sem dia de folga, sem deixar mensagem pra responder amanhã. Que sabe tudo sobre seu negócio, qualifica o lead, agenda na sua agenda e ainda envia a confirmação.
+                            </p>
+                            <p class="case-card__resumo case-card__resumo--secundario">
+                                Agente de IA não é robô burro com respostas prontas. É IA treinada com a sua linguagem, com os seus produtos, com a sua forma de vender. O cliente conversa achando que é uma pessoa, e sai com o problema resolvido — enquanto você foca em fechar.
+                            </p>
+                            <ul class="case-card__pontos">
+                                <li><strong>WhatsApp</strong> atendendo cliente 24h sem você</li>
+                                <li><strong>Qualificação</strong> automática de leads</li>
+                                <li><strong>Agendamento</strong> direto na sua agenda</li>
+                                <li><strong>FAQs</strong> respondidas sem você repetir 100 vezes</li>
+                                <li><strong>Treinado</strong> com o jeito da sua empresa falar</li>
+                            </ul>
+                            <div class="case-card__rodape">
+                                <span class="case-card__stack">Claude · OpenAI · Evolution API · n8n</span>
+                            </div>
+                            <a href="#contato" class="case-card__cta">
+                                Quero esse
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </article>
+
+                        <article class="case-card">
+                            <span class="case-card__rotulo">04 · Automações</span>
+                            <h3 class="case-card__titulo">Tarefa repetitiva nunca mais.</h3>
+                            <p class="case-card__resumo">
+                                Toda empresa tem aquele processo manual chato: copia daqui, cola lá, manda email, atualiza planilha, repete amanhã. Cada minuto ali é minuto que não tá vendendo.
+                            </p>
+                            <p class="case-card__resumo case-card__resumo--secundario">
+                                Automação é quando o computador faz isso tudo sozinho — enquanto você dorme. Conecta as ferramentas que você já usa (WhatsApp, Sheets, Gmail, sistema interno), dispara as ações na hora certa, e só te avisa quando precisa da sua atenção.
+                            </p>
+                            <ul class="case-card__pontos">
+                                <li><strong>Email e follow-ups</strong> que não esquecem ninguém</li>
+                                <li><strong>Planilhas</strong> atualizando sozinhas</li>
+                                <li><strong>Relatórios</strong> prontos toda segunda na sua caixa</li>
+                                <li><strong>Integração</strong> entre tudo que você já usa</li>
+                                <li><strong>Fluxos n8n</strong> personalizados pro seu processo</li>
+                            </ul>
+                            <div class="case-card__rodape">
+                                <span class="case-card__stack">n8n · Zapier · Make · APIs</span>
+                            </div>
+                            <a href="#contato" class="case-card__cta">
+                                Quero esse
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </article>
+
+                        <article class="case-card case-card--destaque">
+                            <span class="case-card__rotulo">05 · Caso meta · Jtech</span>
+                            <h3 class="case-card__titulo">Como a Jtech achou seus primeiros clientes.</h3>
+                            <p class="case-card__resumo">
+                                A gente vende sistema de prospecção, então a primeira coisa que a gente fez foi rodar pra própria Jtech. Faz sentido, né?
+                            </p>
+                            <p class="case-card__resumo case-card__resumo--secundario">
+                                Sistema que busca empresas no Google, qualifica com IA pra descobrir se elas têm fit, gera mensagem personalizada pra cada uma e dispara direto no WhatsApp. Enquanto a gente foca em fechar, o sistema enche o funil.
+                            </p>
+                            <ul class="case-card__pontos">
+                                <li><strong>Busca</strong> de leads via Google Places API</li>
+                                <li><strong>Qualificação</strong> com Claude (Anthropic) por empresa</li>
+                                <li><strong>Mensagem</strong> personalizada gerada por IA</li>
+                                <li><strong>Disparo</strong> via Evolution API direto no WhatsApp</li>
+                                <li><strong>Dossiê</strong> automático pra equipe comercial</li>
+                            </ul>
+                            <div class="case-card__rodape">
+                                <span class="case-card__stack">Python · Anthropic · Google Places · Evolution API</span>
+                            </div>
+                            <a href="#contato" class="case-card__cta">
+                                Quero esse
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </article>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contato" id="contato" aria-labelledby="contato-titulo">
+            <div class="contato__conteudo">
+                <span class="contato__sobretitulo">Vamos conversar</span>
+                <h2 id="contato-titulo" class="contato__titulo">Diagnóstico gratuito<br>em 15 minutos.</h2>
+                <p class="contato__subtitulo">Sem compromisso. Sem comissão. Sem enrolação.<br>Você descobre o que dá pra automatizar no seu negócio hoje.</p>
+
+                <a class="contato__cta" href="https://wa.me/5516996214799?text=Oi!%20Vim%20do%20site%20da%20Jtech%2C%20queria%20um%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener">
+                    <svg class="contato__cta-icone" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 3.5C18.2 1.2 15.2 0 12 0 5.5 0 .2 5.3.2 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7c1.7.9 3.6 1.4 5.5 1.4 6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.3-8.4zM12 21.8c-1.7 0-3.4-.5-4.9-1.3l-.3-.2-3.6.9 1-3.5-.2-.4c-1-1.5-1.5-3.2-1.5-5 0-5.3 4.3-9.6 9.6-9.6 2.6 0 5 1 6.8 2.8 1.8 1.8 2.8 4.2 2.8 6.8 0 5.3-4.3 9.6-9.6 9.6zm5.5-7.2c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6 0-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1-1.1 2.5s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.4 4.7 2.7 1.1 3.3.9 3.9.8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z" fill="currentColor"/>
+                    </svg>
+                    <span>Falar no WhatsApp</span>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape" role="contentinfo">
+        <div class="rodape__conteudo">
+            <a class="rodape__marca" href="#inicio" aria-label="Jtech, voltar ao topo">
+                <svg class="rodape__chip" viewBox="0 0 200 200" aria-hidden="true">
+                    <use href="#chip-jtech"/>
+                </svg>
+                <span class="rodape__nome">Jtech</span>
+            </a>
+            <p class="rodape__copy">© 2026 Jtech &middot; Tecnologia que trabalha por você.</p>
+        </div>
+    </footer>
+
+    <button class="voltar-topo" id="voltar-topo" type="button" aria-label="Voltar ao topo da página">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 14l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

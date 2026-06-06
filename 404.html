@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Jtech — Página não encontrada</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background:
+                radial-gradient(ellipse at center, rgba(180, 140, 80, 0.10) 0%, transparent 60%),
+                #0a0a0a;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .erro {
+            max-width: 560px;
+        }
+
+        .erro__chip {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 32px;
+            opacity: 0.6;
+        }
+
+        .erro__codigo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(120px, 22vw, 220px);
+            letter-spacing: 4px;
+            line-height: 0.9;
+            color: #B48C50;
+            margin-bottom: 16px;
+        }
+
+        .erro__titulo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(28px, 5vw, 44px);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .erro__descricao {
+            color: #c9c9c9;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        .erro__voltar {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 36px;
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid #B48C50;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 16px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .erro__voltar:hover {
+            background: #B48C50;
+            color: #0a0a0a;
+        }
+
+        .erro__voltar svg {
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="erro">
+        <svg class="erro__chip" viewBox="0 0 200 200" aria-hidden="true">
+            <g fill="#B48C50">
+                <rect x="56" y="22" width="10" height="20" rx="1"/>
+                <rect x="82" y="22" width="10" height="20" rx="1"/>
+                <rect x="108" y="22" width="10" height="20" rx="1"/>
+                <rect x="134" y="22" width="10" height="20" rx="1"/>
+                <rect x="56" y="158" width="10" height="20" rx="1"/>
+                <rect x="82" y="158" width="10" height="20" rx="1"/>
+                <rect x="108" y="158" width="10" height="20" rx="1"/>
+                <rect x="134" y="158" width="10" height="20" rx="1"/>
+                <rect x="22" y="56" width="20" height="10" rx="1"/>
+                <rect x="22" y="82" width="20" height="10" rx="1"/>
+                <rect x="22" y="108" width="20" height="10" rx="1"/>
+                <rect x="22" y="134" width="20" height="10" rx="1"/>
+                <rect x="158" y="56" width="20" height="10" rx="1"/>
+                <rect x="158" y="82" width="20" height="10" rx="1"/>
+                <rect x="158" y="108" width="20" height="10" rx="1"/>
+                <rect x="158" y="134" width="20" height="10" rx="1"/>
+            </g>
+            <rect x="42" y="42" width="116" height="116" rx="8" fill="#141414" stroke="#B48C50" stroke-width="2"/>
+            <circle cx="54" cy="54" r="3.2" fill="#d4a766"/>
+            <ellipse cx="82" cy="92" rx="5" ry="7" fill="#ffffff"/>
+            <ellipse cx="118" cy="92" rx="5" ry="7" fill="#ffffff"/>
+            <path d="M 84 124 Q 100 116 116 124" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+
+        <h1 class="erro__codigo">404</h1>
+        <p class="erro__titulo">Página não encontrada</p>
+        <p class="erro__descricao">Esse endereço não existe — ou existiu e foi embora.<br>Mas a Jtech tá aqui. Bora voltar.</p>
+
+        <a class="erro__voltar" href="/jtech/">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 12H5M11 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Voltar pro início
+        </a>
+    </div>
+</body>
+</html>

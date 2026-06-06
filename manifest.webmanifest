@@ -1,0 +1,19 @@
+{
+  "name": "Jtech — Tecnologia que trabalha por você",
+  "short_name": "Jtech",
+  "description": "Sites, sistemas e agentes de IA pra empresas que querem crescer sem complicar.",
+  "start_url": "/jtech/",
+  "scope": "/jtech/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

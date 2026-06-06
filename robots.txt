@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drxtrap.github.io/jtech/sitemap.xml
